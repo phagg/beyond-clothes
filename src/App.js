@@ -33,8 +33,9 @@ class App extends React.Component {
             currentUser: {
               id: snapShot.id,
               ...snapShot.data()
-            }
+           }
           });
+          //console.log(this.state); to see user identity
         });
       } else {
         // when user logout set the userAuth to null
