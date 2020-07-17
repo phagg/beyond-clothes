@@ -36,4 +36,5 @@ const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems
 });
 
+// wrap connect with Router and pass argument mapStateToProps with higer order
 export default withRouter(connect(mapStateToProps)(CartDropdown));
