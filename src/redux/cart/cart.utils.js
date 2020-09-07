@@ -22,7 +22,7 @@ export const removeItemFromCart = (cartItems, cartItemToRemove) => {
   if (existingCartItem.quantity === 1) {
     return cartItems.filter(cartItem => cartItem.id !== cartItemToRemove.id);
   }
-// quantity property gets attached the first time around since this if block won´t run when it´s a new item
+
   return cartItems.map(cartItem =>
     cartItem.id === cartItemToRemove.id
       ? { ...cartItem, quantity: cartItem.quantity - 1 }
